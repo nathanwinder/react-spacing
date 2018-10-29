@@ -58,8 +58,14 @@
     // "experimentalDecorators": true,        /* Enables experimental support for ES7 decorators. */
     // "emitDecoratorMetadata": true,         /* Enables experimental support for emitting type metadata for decorators. */
   },
-  "include": ["src", "test/jsdom-setup.ts"],
-  "exclude": ["example", "example-native", "lib", "node_modules"],
+  "include": ["src"],
+  "exclude": [
+    "example",
+    "example-native",
+    "lib",
+    "node_modules",
+    "test/jsdom-setup.ts"
+  ],
 
   "typedocOptions": {
     "mode": "modules",
