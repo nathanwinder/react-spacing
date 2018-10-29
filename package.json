@@ -35,9 +35,7 @@
     "typescript": "^3.1.3"
   },
   "peerDependencies": {
-    "@winderful/react-breakpoints": "github:nathanwinder/react-breakpoints",
-    "@winderful/react-debugging": "github:nathanwinder/react-debugging",
-    "@winderful/react-scales": "github:nathanwinder/react-scales",
     "react": "^16.6.0"
-  }
+  },
+  "dependencies": {}
 }

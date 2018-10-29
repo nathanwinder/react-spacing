@@ -6,7 +6,12 @@ export interface IStackProps {
   debug?: boolean;
 }
 
-export default class Stack extends React.PureComponent<IStackProps> {
+export class Stack extends React.PureComponent<IStackProps> {
+  public static readonly sizeProps: Array<keyof IStackProps> = ["value"];
+  public static readonly adjustmentProps: Array<keyof IStackProps> = [
+    "valueAdjustment"
+  ];
+
   public render() {
     return (
       <div

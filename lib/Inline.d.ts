@@ -4,7 +4,9 @@ export interface IInlineProps {
     valueAdjustment?: number;
     debug?: boolean;
 }
-export default class Inline extends React.PureComponent<IInlineProps> {
+export declare class Inline extends React.PureComponent<IInlineProps> {
+    static readonly sizeProps: Array<keyof IInlineProps>;
+    static readonly adjustmentProps: Array<keyof IInlineProps>;
     render(): JSX.Element;
 }
 //# sourceMappingURL=Inline.d.ts.map

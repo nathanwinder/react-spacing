@@ -16,7 +16,9 @@ export interface IInsetProps {
     bottomAdjustment?: number;
     debug?: boolean;
 }
-export default class Inset extends React.PureComponent<IInsetProps> {
+export declare class Inset extends React.PureComponent<IInsetProps> {
+    static readonly sizeProps: Array<keyof IInsetProps>;
+    static readonly adjustmentProps: Array<keyof IInsetProps>;
     render(): JSX.Element;
 }
 //# sourceMappingURL=Inset.d.ts.map

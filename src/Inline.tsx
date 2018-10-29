@@ -6,7 +6,12 @@ export interface IInlineProps {
   debug?: boolean;
 }
 
-export default class Inline extends React.PureComponent<IInlineProps> {
+export class Inline extends React.PureComponent<IInlineProps> {
+  public static readonly sizeProps: Array<keyof IInlineProps> = ["value"];
+  public static readonly adjustmentProps: Array<keyof IInlineProps> = [
+    "valueAdjustment"
+  ];
+
   public render() {
     return (
       <div

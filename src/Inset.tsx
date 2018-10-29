@@ -18,7 +18,25 @@ export interface IInsetProps {
   debug?: boolean;
 }
 
-export default class Inset extends React.PureComponent<IInsetProps> {
+export class Inset extends React.PureComponent<IInsetProps> {
+  public static readonly sizeProps: Array<keyof IInsetProps> = [
+    "all",
+    "vertical",
+    "horizontal",
+    "top",
+    "bottom",
+    "left",
+    "right"
+  ];
+  public static readonly adjustmentProps: Array<keyof IInsetProps> = [
+    "allAdjustment",
+    "verticalAdjustment",
+    "horizontalAdjustment",
+    "topAdjustment",
+    "bottomAdjustment",
+    "leftAdjustment",
+    "rightAdjustment"
+  ];
   public render() {
     const a = this.props.all;
     const v = this.props.vertical;
