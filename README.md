@@ -89,7 +89,6 @@ const Inset = withScaleProps(
 ```
 
 ```html
-// debugging enabled for all child components
 <Stack value="m"/>
 <Stack value={15}/>
 ```
@@ -116,7 +115,6 @@ const Inset = withBreakpointProps(
 ```
 
 ```html
-// debugging enabled for all child components
 <Stack value={{ mobile: 10, tablet: 20 }}/>
 <Stack value={15}/>
 ```
