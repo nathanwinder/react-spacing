@@ -1,5 +1,9 @@
 import * as React from "react";
 
+export interface IInsetDebugOptions {
+  color?: string;
+}
+
 export interface IInsetProps {
   all?: number;
   allAdjustment?: number;
@@ -15,7 +19,7 @@ export interface IInsetProps {
   rightAdjustment?: number;
   bottom?: number;
   bottomAdjustment?: number;
-  debug?: boolean;
+  debug?: boolean | IInsetDebugOptions;
 }
 
 export class Inset extends React.PureComponent<IInsetProps> {
@@ -56,6 +60,16 @@ export class Inset extends React.PureComponent<IInsetProps> {
     const ba = this.props.bottomAdjustment || va || aa || 0;
     const ra = this.props.rightAdjustment || ha || aa || 0;
 
+    let borderColor: any;
+    const defaultBorderColor = "#FF000055";
+    if (this.props.debug) {
+      if (typeof this.props.debug === "object") {
+        borderColor = this.props.debug.color || defaultBorderColor;
+      } else {
+        borderColor = defaultBorderColor;
+      }
+    }
+
     const style = this.props.debug
       ? {
           borderStyle: "solid",
@@ -63,7 +77,7 @@ export class Inset extends React.PureComponent<IInsetProps> {
           borderLeftWidth: l + la,
           borderBottomWidth: b + ba,
           borderRightWidth: r + ra,
-          borderColor: "#FF000055"
+          borderColor
         }
       : {
           paddingTop: t + ta,

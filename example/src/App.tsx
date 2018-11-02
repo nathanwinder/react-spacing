@@ -73,7 +73,6 @@ class App extends React.Component {
             horizontal={{ mob: "m", tab: "xl" }}
             vertical={{ mob: "l", tab: "l" }}
             debug={false}
-            debugOptions={{ debugChildren: false }}
           >
             <Box direction="column">
               <Box>

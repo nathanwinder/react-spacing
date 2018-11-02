@@ -1,4 +1,7 @@
 import * as React from "react";
+export interface IInsetDebugOptions {
+    color?: string;
+}
 export interface IInsetProps {
     all?: number;
     allAdjustment?: number;
@@ -14,7 +17,7 @@ export interface IInsetProps {
     rightAdjustment?: number;
     bottom?: number;
     bottomAdjustment?: number;
-    debug?: boolean;
+    debug?: boolean | IInsetDebugOptions;
 }
 export declare class Inset extends React.PureComponent<IInsetProps> {
     static readonly sizeProps: Array<keyof IInsetProps>;

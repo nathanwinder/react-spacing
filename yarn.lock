@@ -129,18 +129,6 @@
   resolved "https://registry.yarnpkg.com/@types/tough-cookie/-/tough-cookie-2.3.3.tgz#7f226d67d654ec9070e755f46daebf014628e9d9"
   integrity sha512-MDQLxNFRLasqS4UlkWMSACMKeSm1x4Q3TxzUC7KQUsh6RK1ZrQ0VEyE3yzXcBu+K8ejVj4wuX32eUG02yNp+YQ==
 
-"@winderful/react-breakpoints@github:nathanwinder/react-breakpoints":
-  version "0.1.0"
-  resolved "https://codeload.github.com/nathanwinder/react-breakpoints/tar.gz/329a43d7b62e9140dfc493324aafdebe16a4cbb7"
-
-"@winderful/react-debugging@github:nathanwinder/react-debugging":
-  version "0.1.0"
-  resolved "https://codeload.github.com/nathanwinder/react-debugging/tar.gz/c034f6318b131e4df06d18311ab7784d312071c8"
-
-"@winderful/react-scales@github:nathanwinder/react-scales":
-  version "0.1.0"
-  resolved "https://codeload.github.com/nathanwinder/react-scales/tar.gz/5c77c5da43b32e245addd43c556a90cdaa6fb89d"
-
 abab@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/abab/-/abab-2.0.0.tgz#aba0ab4c5eee2d4c79d3487d85450fb2376ebb0f"

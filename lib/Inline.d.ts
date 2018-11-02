@@ -1,8 +1,13 @@
 import * as React from "react";
+export interface IInlineDebugOptions {
+    color?: string;
+    border?: boolean;
+    borderColor?: string;
+}
 export interface IInlineProps {
     value: number;
     valueAdjustment?: number;
-    debug?: boolean;
+    debug?: boolean | IInlineDebugOptions;
 }
 export declare class Inline extends React.PureComponent<IInlineProps> {
     static readonly sizeProps: Array<keyof IInlineProps>;
