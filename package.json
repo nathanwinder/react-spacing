@@ -1,6 +1,6 @@
 {
   "name": "@winderful/react-spacing",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A TypeScript React library used to establish consistent scale across application components",
   "main": "lib/index.js",
   "author": "Nathan Winder",
