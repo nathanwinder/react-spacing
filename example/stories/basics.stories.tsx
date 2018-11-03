@@ -1,9 +1,29 @@
 import { boolean, withKnobs } from "@storybook/addon-knobs";
 import { storiesOf } from "@storybook/react";
-import { Inline, Inset, Stack } from "@winderful/react-spacing";
+import {
+  FontMetrics,
+  Inline,
+  Inset,
+  Stack,
+  Text
+} from "@winderful/react-spacing";
 import * as React from "react";
 import { Box } from "./Box";
 import { Page } from "./Page";
+
+const metrics: FontMetrics = {
+  capHeight: -0.68,
+  baseline: 0,
+  xHeight: -0.45,
+  descent: 0.21,
+  bottom: 0.5,
+  ascent: -0.695,
+  tittle: -0.695,
+  top: -0.765,
+  fontFamily: "Roboto",
+  fontWeight: "normal",
+  fontSize: 200
+};
 
 const debug = (value: any = true) =>
   boolean("debug", !!value) ? value || true : false;
@@ -39,7 +59,11 @@ storiesOf("react-spacing/basics", module)
           <Box wrap>
             {[1, 2, 3, 4, 5].map(i => (
               <Box>
-                Item {i} <Inline value={5} debug={debug()} />
+                <Text size={100} metrics={metrics}>
+                  Item {i}
+                </Text>
+                <span style={{ fontFamily: "Roboto", fontSize: 100 }} />{" "}
+                <Inline value={5} debug={debug()} />
               </Box>
             ))}
           </Box>
