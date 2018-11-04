@@ -35,6 +35,7 @@ export interface TextBlockProps {
   weight?: number;
   color?: string;
   debug?: boolean;
+  letterSpacing?: number;
   lineHeight?: number;
 }
 
@@ -119,6 +120,7 @@ export class TextBlock extends React.PureComponent<TextBlockProps> {
             fontFamily: metrics.fontFamily,
             fontWeight: this.props.weight,
             color: this.props.color,
+            letterSpacing: this.props.letterSpacing,
             fontSize,
             lineHeight
           }}
