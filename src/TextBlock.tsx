@@ -32,6 +32,8 @@ export interface FontMetrics {
 export interface TextBlockProps {
   metrics: FontMetrics;
   size: number;
+  weight?: number;
+  color?: string;
   debug?: boolean;
   lineHeight?: number;
 }
@@ -115,7 +117,8 @@ export class TextBlock extends React.PureComponent<TextBlockProps> {
           style={{
             display: "inline",
             fontFamily: metrics.fontFamily,
-            fontWeight: metrics.fontWeight,
+            fontWeight: this.props.weight,
+            color: this.props.color,
             fontSize,
             lineHeight
           }}

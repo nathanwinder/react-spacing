@@ -23,6 +23,8 @@ export interface FontMetrics {
 export interface TextBlockProps {
     metrics: FontMetrics;
     size: number;
+    weight?: number;
+    color?: string;
     debug?: boolean;
     lineHeight?: number;
 }
