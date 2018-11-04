@@ -26,6 +26,7 @@ export interface TextBlockProps {
     weight?: number;
     color?: string;
     debug?: boolean;
+    letterSpacing?: number;
     lineHeight?: number;
 }
 export declare class TextBlock extends React.PureComponent<TextBlockProps> {
