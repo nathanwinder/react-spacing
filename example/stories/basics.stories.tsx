@@ -1,29 +1,10 @@
 import { boolean, withKnobs } from "@storybook/addon-knobs";
 import { storiesOf } from "@storybook/react";
-import {
-  FontMetrics,
-  Inline,
-  Inset,
-  Stack,
-  Text
-} from "@winderful/react-spacing";
+import { Inline, Inset, Stack, TextBlock } from "@winderful/react-spacing";
 import * as React from "react";
 import { Box } from "./Box";
+import { robotoMetrics } from "./font";
 import { Page } from "./Page";
-
-const metrics: FontMetrics = {
-  capHeight: -0.68,
-  baseline: 0,
-  xHeight: -0.45,
-  descent: 0.21,
-  bottom: 0.5,
-  ascent: -0.695,
-  tittle: -0.695,
-  top: -0.765,
-  fontFamily: "Roboto",
-  fontWeight: "normal",
-  fontSize: 200
-};
 
 const debug = (value: any = true) =>
   boolean("debug", !!value) ? value || true : false;
@@ -59,10 +40,9 @@ storiesOf("react-spacing/basics", module)
           <Box wrap>
             {[1, 2, 3, 4, 5].map(i => (
               <Box>
-                <Text size={100} metrics={metrics}>
+                <TextBlock size={10} metrics={robotoMetrics}>
                   Item {i}
-                </Text>
-                <span style={{ fontFamily: "Roboto", fontSize: 100 }} />{" "}
+                </TextBlock>
                 <Inline value={5} debug={debug()} />
               </Box>
             ))}
@@ -72,13 +52,21 @@ storiesOf("react-spacing/basics", module)
         <Box>
           <Box grow basis={0}>
             <Inset horizontal={10} vertical={5} debug={debug()}>
-              <Box>Cancel</Box>
+              <Box>
+                <TextBlock size={10} metrics={robotoMetrics}>
+                  Cancel
+                </TextBlock>
+              </Box>
             </Inset>
           </Box>
           <Inline value={10} debug={debug()} />
           <Box grow basis={0}>
             <Inset horizontal={10} vertical={5} debug={debug()}>
-              <Box shrink>Ok</Box>
+              <Box shrink>
+                <TextBlock size={10} metrics={robotoMetrics}>
+                  Ok
+                </TextBlock>
+              </Box>
             </Inset>
           </Box>
         </Box>

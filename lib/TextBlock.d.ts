@@ -1,18 +1,11 @@
 import * as React from "react";
+/**
+ * References
+ *
+ * https://iamvdo.me/en/blog/css-font-metrics-line-height-and-vertical-align
+ * https://silnrsi.github.io/FDBP/en-US/Design_Metrics.html
+ */
 export interface FontMetrics {
-    capHeight: number;
-    baseline: number;
-    xHeight: number;
-    descent: number;
-    bottom: number;
-    ascent: number;
-    tittle: number;
-    top: number;
-    fontFamily: string;
-    fontWeight: "bold" | "normal" | number;
-    fontSize: number;
-}
-export interface TypeMetrics {
     fontFamily: string;
     fontWeight: number;
     em: number;
@@ -33,7 +26,7 @@ export interface TextBlockProps {
     debug?: boolean;
     lineHeight?: number;
 }
-export declare class Text extends React.PureComponent<TextBlockProps> {
+export declare class TextBlock extends React.PureComponent<TextBlockProps> {
     render(): JSX.Element;
 }
-//# sourceMappingURL=Text.d.ts.map
+//# sourceMappingURL=TextBlock.d.ts.map

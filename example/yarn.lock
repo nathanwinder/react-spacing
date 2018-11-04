@@ -11077,6 +11077,16 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
+typeface-nunito@^0.0.54:
+  version "0.0.54"
+  resolved "https://registry.yarnpkg.com/typeface-nunito/-/typeface-nunito-0.0.54.tgz#5046f24d8d1492ca8fd823896d6e1cdefbe63203"
+  integrity sha512-hxC+o6vc0vkXPDNGRWZ26ghXPTzVC2gJbUGSJEmoMByb02yM94PiVOLoBa0ChC+HgNbAGbHeQh7k6ok+59gjZw==
+
+typeface-roboto@^0.0.54:
+  version "0.0.54"
+  resolved "https://registry.yarnpkg.com/typeface-roboto/-/typeface-roboto-0.0.54.tgz#8f02c9a18d1cfa7f49381a6ff0d21ff061f38ad2"
+  integrity sha512-sOFA1FXgP0gOgBYlS6irwq6hHYA370KE3dPlgYEJHL3PJd5X8gQE0RmL79ONif6fL5JZuGDj+rtOrFeOqz5IZQ==
+
 typescript@^3.1.3:
   version "3.1.3"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.1.3.tgz#01b70247a6d3c2467f70c45795ef5ea18ce191d5"
